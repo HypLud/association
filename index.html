@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Adoptez un compagnon fidèle à La S.P.A. de La Réunion ! Notre refuge et dispensaire, situé dans le nord de l’île, a déjà trouvé des foyers aimants pour près de 600 chiens et 800 chats en 2021. En plus d'aider les animaux de la fourrière, nous les identifions, les vaccinons et les stérilisons systématiquement. Faites une différence dans la vie des animaux abandonnés en les adoptant chez nous.">
+    <meta name="keywords" content="S.P.A, Société Protectrice des Animaux, Refuge pour animaux, Dispensaire pour animaux, Adoption d'animaux, Chien et chat à adopter, Animaux abandonnés, Fourrière animale, Puce électronique pour animaux, Stérilisation d'animaux, Maltraitance animale, Don pour les animaux, Compagnon SPA, Sauvetage d'animaux, Chatons abandonnés, Campagne de sensibilisation, Abandon d'animaux">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>SPA Société Protectrice des Animaux</title>
+    <style>
+        .carousel{
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        }
+
+        .carousel-control-prev, .carousel-control-next{
+            height: 474px;
+        }
+
+        #video{
+            display: flex;
+            margin: 40px 0;
+        }
+        #video video{
+            width: 800px;
+            height: 400px;
+            margin: auto;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+            border: solid 10px rgba(0,0,0,0.2);
+            background-color: #000;
+        }
+
+        @media screen and (max-width: 760px){
+            .carousel-control-prev, .carousel-control-next{
+                height: 138px;
+            }
+            #video{
+                flex-direction: column;
+                gap: 20px;
+            }
+            #video video{
+                width: 300px;
+                height: 200px;
+            }
+        }
+
+        .thumbs{
+            display: flex;
+            justify-content: space-between;
+            flex-shrink: 1;
+            align-items: center;
+        }
+        .thumbs img{
+            width: 25%;
+        }
+        .thumbs img:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Début du header -->
+    <header>
+        <div id="logo"><a href="#"><img src="images/logo.jpg" alt="Logo SPA" width="120"></a></div>
+        <ul>
+            <li><i class="fa-solid fa-house"></i> <a href="#">ACCUEIL</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="#nous_contacter">CONTACT</a></li>
+            <li class="don"><i class="fa-solid fa-hand-holding-dollar"></i> <a href="#">FAIRE UN DON</a></li>
+        </ul>
+    </header>
+    <!-- Fin du header -->
+    
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/slider-01.jpg" class="d-block w-100" alt="Slider 01">
+            </div>
+            <div class="carousel-item">
+                <img src="images/slider-02.jpg" class="d-block w-100" alt="Slider 02">
+            </div>
+            <div class="carousel-item">
+                <img src="images/slider-03.jpg" class="d-block w-100" alt="Slider 03">
+            </div>
+            <div class="carousel-item">
+                <img src="images/slider-04.jpg" class="d-block w-100" alt="Slider 04">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <div class="thumbs">
+            <img src="images/slider-01.jpg" alt="Slider 01" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 01">
+            <img src="images/slider-02.jpg" alt="Slider 02" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 02">
+            <img src="images/slider-03.jpg" alt="Slider 03" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 03">
+            <img src="images/slider-04.jpg" alt="Slider 04" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 04">
+        </div>
+    </div>
+    <!-- Fin du carousel-->
+
+
+
+    <!-- Début spa -->
+    <div id="spa">
+        <h1><strong>S.P.A</strong> Société Protectrice des Animaux</h1>
+        <p>La <strong>S.P.A</strong> de La Réunion gère un refuge et un dispensaire installés dans le nord de l’île. <strong><i><mark>En 2021, près de chiens ont été adoptés, 200 sont partis dans un refuge en métropole et 800 chats ont étés adoptés localement</mark></i></strong>. Les animaux qui intègrent le refuge <strong>S.P.A</strong> de la Réunion sont principalement issus de la fourrière puisqu’une convention lie l’association et la fourrière. Tous les animaux adoptés au refuge sont systématiquement identifiés par puce électronique, ils reçoivent un premier vaccin et sont systématiquement stérilisés pour les femelles et castrés pour les mâles.</p>
+        <div id="video">
+            <video src="videos/spa-reunion.mp4" controls></video>
+        </div>
+    </div>
+    <!-- Fin spa -->
+
+    <!-- Début du conteneur -->
+    <div id="conteneur">
+        <section>
+            <div class="bloc_gauche">
+                <img src="images/chien-01.jpg" alt="Chien 01">
+            </div>
+            <div class="bloc_droite">
+                <h2><i class="fa-solid fa-dog"></i> Sauvez des animaux, comme Flyn, de la maltraitance</h2>
+                <p>L’histoire de <strong>Flyn</strong> nous a bouleversés. Enfermé dans une cave sombre, il ne recevait jamais de visite sauf de son maître pour le battre. <strong><i><mark>Aidez-nous à soigner et choyer les animaux secourus, comme <strong>Flyn</strong>, afin qu’ils retrouvent confiance en l’homme et se sentent aimés</mark></i></strong>. Devenez ainsi Compagnon <strong>SPA</strong> et grâce à votre don régulier offrez à des animaux meurtris l’espoir de se reconstruire et de retrouver au plus vite la douceur d’un foyer aimant.</p>
+                <div class="bouton">
+                    <i class="fa-solid fa-heart"></i>
+                    <a href="#">ADOPTER</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="bloc_gauche">
+                <img src="images/chat.jpg" alt="Chat">
+            </div>
+            <div class="bloc_droite">
+                <h2><i class="fa-solid fa-cat"></i> Stop aux abandons de chatons</h2>
+                <p>La situation est dramatique et se répète chaque année : des milliers de chatons sont abandonnés dans les refuges qui se remplissent et débordent... <strong><i><mark>Ces trois derniers mois, 3000 chatons ont été recueillis par les équipes de la <strong>SPA</strong></mark></i></strong>. Ces bébés de quelques semaines sont souvent dans un état de santé préoccupant. Il est urgent de tous les sauver !</p>
+                <div class="bouton">
+                    <i class="fa-solid fa-heart"></i>
+                    <a href="#">FAIRE UN DON</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="bloc_gauche">
+                <img src="images/chien-02.jpg" alt="Chien 02">
+            </div>
+            <div class="bloc_droite">
+                <h2><i class="fa-solid fa-dog"></i> Il était une fois … l’abandon</h2>
+                <p>Pour lutter contre un fléau qui se répète chaque année, découvrez la nouvelle campagne de l’été <strong><i><mark>Adopter un animal sans réfléchir, c’est le condamner à l’abandon !</mark></i></strong> Les équipes <strong>SPA</strong> sont sur le front pour sauver les milliers de victimes d’abandons et de maltraitances en cette période estivale. Les refuges craignent de battre un nouveau record du nombre d’animaux recueillis... </p>
+                <div class="bouton">
+                    <i class="fa-solid fa-heart"></i>
+                    <a href="#">CAMPAGNE</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Fin du conteneur -->
+
+    <!-- Début nous contacter -->
+    <div id="nous_contacter">
+        <h2><i class="fa-solid fa-envelope"></i> Nous contacter</h2>
+        <p>Si vous souhaiter devenir bénévole <i class="fa-solid fa-hand-holding-heart"></i> ou nous aider et soutenir l’association <i class="fa-solid fa-hand-holding-medical"></i> veuillez nous contacter en utilisant le formulaire ci-dessous.</p>
+    </div>
+    <!-- Fin nous contacter -->
+
+    <!-- Début du formulaire -->
+    <div id="contact">
+        <form action="index.html" method="post">
+            <div class="flotter">
+                <label for="nom">Votre nom</label>
+                <input type="text" name="nom" id="nom" placeholder="Nom">
+                <label for="prenom">Votre prénom</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+            </div>
+            <label for="telephone">Votre téléphone</label>
+            <input type="tel" name="telephone" id="telephone" placeholder="Téléphone">
+            <label for="email">Votre email</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <label for="adresse">Votre adresse</label>
+            <input type="text" name="adresse" id="adresse" placeholder="Adresse">
+            <div class="flotter">
+                <label for="ville">Votre ville</label>
+                <input type="text" name="ville" id="ville" placeholder="Ville">
+                <label for="cp">Votre code postal</label>
+                <input type="text" name="code_postal" id="cp" placeholder="Code postal">
+            </div>
+            <label for="message">Votre message</label>
+            <textarea name="message" id="message" placeholder="message"></textarea>
+            <div class="flotter">
+                <input type="reset" value="Annuler">
+                <input type="submit" value="Envoyer">
+            </div>
+            </form>
+    </div>
+    <!-- Fin du formulaire -->
+
+    <!-- Début Google Maps -->
+    <div id="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14909.335317030911!2d55.4938426!3d-20.8988848!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21788156ffedf97b%3A0x80a2a1d62a0e4602!2sDispensaire%20De%20La%20SPA!5e0!3m2!1sfr!2sfr!4v1690835381371!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Fin Google Maps -->
+    
+    <!-- Début du footer -->
+    <footer>
+        <div>
+            <aside id="icones">
+                <a href="https://www.youtube.com/channel/UCHIbj4gZgIXThXRqeCMStrg" target="_blank"><img src="images/youtube-orange.png" alt="Youtube" width="40" height="40"></a> 
+                <a href="https://www.facebook.com/spaofficiel/" target="_blank"><img src="images/facebook-orange.png" alt="Facebook" width="40" height="40"></a>
+                <a href="https://www.instagram.com/la_spa/?hl=fr" target="_blank"><img src="images/instagram-orange.png" alt="Instagram" width="40" height="40"></a>  
+                <a href="https://twitter.com/SPA_Officiel" target="_blank"><img src="images/twitter-orange.png" alt="Twitter" width="40" height="40"></a>
+            </aside>
+            <p>Suivez-nous</p>
+        </div>
+
+        <div>
+            <img src="images/telephone-orange.png" alt="Téléphone" width="40" height="40"> 
+            <p><a href="tel:0692308688">0692 30 86 88</a></p>
+         </div>
+
+         <div>
+            <img src="images/email-orange.png" alt="Email" width="40" height="40"> 
+            <p><a href="mailto:spa.reunion@orange.fr">spa.reunion@orange.fr</a></p>
+         </div>
+
+         <div>
+            <img src="images/don.png" alt="Don" width="40" height="40"> 
+            <p><a href="https://soutenir.la-spa.fr/P_StopAbandon2023/~mon-don?ns_ira_cr_arg=IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyOyFaC2%2FXfUPUO%2FKQ9OezyvbFXJFTvTJP6mmA9ofWBn0ASKkuo%2BO4TowTTg1N5lg%2BJW1Rm0wqzid%2FtDEcI%2BEArvgsBK15Fu0pfgVDDkU7reWw207NRQtiCAv8z8I8hADb%2Fj9bQIqkQEu2r0NwdKjlMIOJl4jyXCPqu5FaGWk20yLQ%3D%3D&utm_source=SITE&utm_medium=STICKYR&utm_campaign=Abandon2023&_cv=1">Faire un don</a></p>
+         </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
