@@ -1,0 +1,76 @@
+/*________________
+
+CSS Version Mobile
+___________________*/
+
+@media screen and (max-width: 760px){
+    /* Début du header */
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    header ul{
+        flex-direction: column;
+    }
+    header ul li{
+        margin-bottom: 20px;
+    }
+    /* Fin du header */
+
+    
+
+    #nous_contacter p{
+        width: 100%;
+        margin: auto;
+    }
+
+    #contact{
+        width: 80%;
+    }
+
+    .flotter{
+        flex-direction: column;
+        width: 100%;
+    }
+    .flotter input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .flotter input:last-child{
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 960px) {
+     /* Début du conteneur */
+     #conteneur section{
+        flex-direction: column;
+    }
+    .bloc_gauche{
+        width: 100%;
+    }
+    .bloc_droite{
+        width: 100%;
+    }
+    .bloc_droite h2{
+        margin-bottom: 40px;
+    }
+    .bloc_droite p{
+        margin-bottom: 40px;
+    }
+    .bouton{
+        margin: auto;
+    }
+    /* Fin du conteneur*/
+
+
+    /* Début du footer */
+    footer{
+        flex-direction: column;
+    }
+    footer div{
+        min-width: 400px;
+    }
+    /* Fin du footer */
+}

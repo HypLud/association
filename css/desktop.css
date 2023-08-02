@@ -1,0 +1,314 @@
+/*________________
+
+CSS Version Desktop
+___________________*/
+
+/* Police roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Début du header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+#logo{
+    margin: 20px;
+}
+header ul{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    margin: 20px;
+}
+header ul li{
+    padding: 15px 60px;
+    background-color: #ED993F;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+header ul li.don{
+    background-color: #EBF0F0;
+}
+header ul li.don:hover{
+    background-color: #8F735E;
+}
+header ul li:hover{
+    background-color: #f3b35c;
+    transition: 0.5s;
+}
+header ul li:first-child{
+    background-color: #D95459;
+}
+header ul li:first-child:hover{
+    background-color: #f0717a;
+}
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+/* Fin du header */
+
+
+
+
+/* Début spa */
+#spa{
+    width: 80%;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 10px ;
+    border: solid 1px #ccc;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    padding: 10px;
+}
+#spa h1{
+    max-width: 900px;
+    padding: 20px;
+    background-color: #D95459;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin: 40px auto;
+    font-weight: bold;
+}
+/* Fin spa */
+
+
+
+/* Début conteneur */
+#conteneur{
+    flex-direction: column;
+}
+#conteneur section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    border-radius: 10px ;
+    border: solid 1px #ccc;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    padding: 10px;
+}
+.bloc_gauche{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.bloc_gauche img{
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+}
+.bloc_droite{
+    width: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bloc_droite h2{
+    color: #D95459;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.bouton{
+    background-color: #f3b35c;
+    width: 300px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    align-self: flex-end;
+}
+.bouton:hover{
+    background-color: #D95459;
+    transition: 0.5s;
+    
+}
+.bouton:hover .fa-heart{
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.bouton .fa-heart{
+    background-color: #fff;
+    margin-left: 5px;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: red;
+    transition: 0.5s;
+}
+.bouton a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+#nous_contacter{
+    width: 80%;
+    margin: 100px auto;
+}
+#nous_contacter h2{
+    max-width: 900px;
+    padding: 20px;
+    background-color: #f3b35c;
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+    margin: 40px auto;
+    font-weight: bold;
+}
+#nous_contacter p{
+    width: 50%;
+    font-size: 1.2rem;
+    margin: auto;
+}
+
+
+/* Début du formulaire */
+#contact{
+    width: 63%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+::placeholder{
+    color: #222;
+}
+.flotter{
+    display: flex;
+    justify-content: space-between;
+}
+.flotter input{
+    width: 48%; 
+    background-color: #f3b35c;
+    color: #000;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+label{
+    display: none;
+}
+input, textarea{
+    background-color: #f3b35c;
+    color: #000;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 10px; 
+    transition: 0.5s;
+}
+textarea{
+    height: 200px;
+}
+input:focus, textarea:focus{
+    background-color: #D95459;
+    transition: 0.5s;
+    color: #fff;
+    box-shadow: 0 20px 10px rgba(0,0,0,0.3);
+    transform: scale(1.2);
+}
+input[type="reset"], input[type="submit"]{
+    transition: 0.5s;
+} 
+input[type="reset"]:hover, input[type="submit"]:hover{
+    background-color: #D95459;
+    transition: 0.5s;
+} 
+/* Fin du formulaire */
+
+
+/* Début Google Maps */
+#maps{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+}
+#maps iframe{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px ;
+    border: solid 1px #ccc;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    padding: 10px;
+}
+/* Fin Google Maps*/
+
+
+/* Début du footer */
+footer{
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    padding: 40px;
+    gap: 10px;
+}
+footer div{
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,1);
+    gap: 10px;
+}
+#icones{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#icones img{
+    cursor: pointer;
+}
+
+footer div p{
+    position: relative;
+    top: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+footer div p a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+footer div p a:hover{
+    color: #E26628;
+    transition: 0.5s;
+}
+/* Fin du footer */
